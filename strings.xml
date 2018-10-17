@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">blackjackGameHammons</string>
+    <string name="playerLabel">Player</string>
+    <string name="dealerLabel">Dealer</string>
+    <string name="scoreLabel">Score: </string>
+    <string name="hitLabel">HIT</string>
+    <string name="stopLabel">STOP</string>
+</resources>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#006400"
+    tools:context=".MainActivity">
+
+    <!---   dealer setup -->
+    <TextView
+        android:id="@+id/dealerName"
+        android:textSize="25sp"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:text="@string/dealerLabel"
+        android:textColor="@color/black"
+        />
+
+    <ImageView
+        android:id="@+id/dealerCard1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/dealerName"
+        android:layout_alignRight="@+id/fakeView"
+        android:src="@drawable/back"
+        />
+
+    <ImageView
+        android:id="@+id/dealerCard2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_toRightOf="@id/dealerCard1"
+        android:layout_below="@id/dealerName"
+        android:src="@drawable/back"
+        />
+
+    <ImageView
+        android:id="@+id/dealerCard3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/dealerCard1"
+        android:layout_toStartOf="@+id/dealerCard4"
+        android:src="@drawable/back" />
+
+    <ImageView
+        android:id="@+id/dealerCard4"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/dealerCard1"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/back" />
+
+    <ImageView
+        android:id="@+id/dealerCard5"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/dealerCard1"
+        android:layout_toEndOf="@+id/dealerCard4"
+        android:src="@drawable/back" />
+
+    <TextView
+        android:id="@+id/dealerScoreLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35sp"
+        android:text="@string/scoreLabel"
+        android:layout_above="@id/midLine"
+        android:textColor="@color/black"
+        />
+    <EditText
+        android:id="@+id/dealerScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/midLine"
+        android:layout_toRightOf="@+id/dealerScoreLabel"
+        android:text=""
+        />
+
+
+
+    <!---   seperating line -->
+    <View
+        android:id="@+id/midLine"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#000000"
+        android:layout_above="@id/playerName"
+        />
+
+
+
+    <!---   players setuo -->
+    <TextView
+        android:id="@+id/playerName"
+        android:textSize="25sp"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content"
+        android:text="@string/playerLabel"
+        android:textColor="@color/black"
+        />
+
+    <ImageView
+        android:id="@+id/playerCard1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/playerName"
+        android:layout_alignRight="@+id/fakeView"
+        android:src="@drawable/back"
+        />
+
+    <ImageView
+        android:id="@+id/playerCard2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_toRightOf="@id/playerCard1"
+        android:layout_below="@id/playerName"
+        android:src="@drawable/back"
+        />
+
+    <ImageView
+        android:id="@+id/playerCard3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/playerCard1"
+        android:layout_toStartOf="@+id/playerCard4"
+        android:src="@drawable/back" />
+
+    <ImageView
+        android:id="@+id/playerCard4"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/playerCard1"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/back" />
+
+    <ImageView
+        android:id="@+id/playerCard5"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/playerCard1"
+        android:layout_toEndOf="@+id/playerCard4"
+        android:src="@drawable/back" />
+
+    <TextView
+        android:id="@+id/playerScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35sp"
+        android:text="@string/scoreLabel"
+        android:layout_above="@id/stopButton"
+        android:textColor="@color/black"
+        />
+    <EditText
+        android:id="@+id/playerScoreReal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/playerScore"
+        android:layout_above="@id/hitButton"
+        android:text=""
+        />
+
+
+
+
+
+
+    <!---   hit and stop buttons -->
+    <Button
+        android:id="@+id/hitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@id/fakeView"
+        android:text="@string/hitLabel"
+        android:textSize="40sp"
+        android:background="@color/hitButton"
+
+        />
+
+    <View
+        android:id="@+id/fakeView"
+        android:layout_width="00dp"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        />
+
+    <Button
+        android:id="@+id/stopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fakeView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/stopLabel"
+        android:textSize="40sp"
+        android:background="@color/stopButton"
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/newGame"
+        android:text="NEW GAME"
+        android:onClick="play"
+
+        />
+
+
+</RelativeLayout>
