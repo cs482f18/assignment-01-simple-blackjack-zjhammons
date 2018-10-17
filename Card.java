@@ -5,19 +5,20 @@ package com.example.zjhammons.blackjackgamehammons;
  * score associated with the specific card.
  * Version:1 10.4.18
  */
-public class Card extends  DeckList{
+public class Card extends  DeckList { // Why are extending the DeckList? Does not seem to be logical.
 
-private int cardImage;
-private int score;
+   /** Add javadoc comments for your instance variables. E.g., the image id of the Card */
+    private int cardImage;
+    /** The numeric value of the card */
+    private int score;
 
 
     /**
      * This constructor creates a new card object
-     * @param cardImage
-     * @param score
+     * @param cardImage // add a description of the parameter e.g. look at the following line
+     * @param score the numeric valu of the Card
      */
-    public Card(int cardImage, int score )
-{
+public Card(int cardImage, int score ) {
     this.cardImage = cardImage;
     this.score = score;
 }
